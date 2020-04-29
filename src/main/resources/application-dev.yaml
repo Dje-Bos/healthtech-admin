@@ -1,0 +1,6 @@
+spring:
+  boot:
+    admin:
+      ui:
+        title: HealthTech Admin
+        public-url: https://healhtech-admin.azurewebsites.net
