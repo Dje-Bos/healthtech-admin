@@ -1,6 +1,7 @@
 plugins {
 	id 'org.springframework.boot' version '2.2.6.RELEASE'
 	id 'io.spring.dependency-management' version '1.0.9.RELEASE'
+	id "org.sonarqube" version "2.8"
 	id 'java'
 }
 
@@ -14,6 +15,14 @@ repositories {
 
 ext {
 	set('springBootAdminVersion', "2.2.1")
+}
+
+sonarqube {
+	properties {
+		property "sonar.projectKey", "Dje-Bos_healthtech-admin"
+		property "sonar.organization", "dje-bos-github"
+		property "sonar.host.url", "https://sonarcloud.io"
+	}
 }
 
 dependencies {

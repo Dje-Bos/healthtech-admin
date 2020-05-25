@@ -1,2 +1,9 @@
 server:
   port: 8083
+
+spring:
+  boot:
+    admin:
+      ui:
+        title: HealthTech Admin
+        brand: <img src="assets/img/icon-spring-boot-admin.svg"><span>HealthTech Admin</span>
